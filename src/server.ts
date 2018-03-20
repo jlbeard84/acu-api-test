@@ -3,7 +3,6 @@ import * as express from "express";
 import * as logger from "morgan";
 import * as bodyParser from "body-parser";
 
-
 const PlacesData = require("./data/places");
 
 class App {
