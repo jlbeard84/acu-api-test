@@ -14,7 +14,8 @@ class App {
         this.middleware();
         
         this.express.get("/", (req, res) => {
-            res.send(PlacesData);
+            res.setHeader("Content-Type", "application/json");
+            res.json(PlacesData);
         });
     }
 
